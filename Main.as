@@ -1,1 +1,1 @@
-﻿package  {	import net.flashpunk.*;		public class Main extends Engine {		public function Main() {			super(960, 700, 60);		}	}	}
+﻿package  {	public class Main {		public function Main() {					}	}	}

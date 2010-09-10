@@ -15,6 +15,8 @@
 	{
 		public const SNR_GAME_B:String = "snrGameB";
 		
+		public var player;
+		
 		public function snrGameB()
 		{
 			m_name = "gob";
@@ -22,10 +24,17 @@
 		
 		public override function Awake()
 		{
-			
+			gameObject.content = new BackGroundBase();
 		}
 		
 		public override function Start()
+		{
+			player = gt.GO(snrPlayerControlB);
+			gameObject.addChild(player);
+			trace("new");
+		}
+		
+		public function Show()
 		{
 			
 		}

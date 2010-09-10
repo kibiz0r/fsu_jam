@@ -42,7 +42,7 @@
 		
 		public override function Start()
 		{
-			gtLog.Add("SNRGame Version 0.01");
+			//gtLog.Add("SNRGame Version 0.01");
 			screens.Switch("game");
 		}
 	}

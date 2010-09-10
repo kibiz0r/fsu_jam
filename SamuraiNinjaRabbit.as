@@ -1,0 +1,1 @@
+﻿package  {		public class SamuraiNinjaRabbit {		public function SamuraiNinjaRabbit() {			// constructor code		}	}	}

@@ -24,14 +24,16 @@
 		
 		public override function Awake()
 		{
-			gameObject.content = new BackGroundBase();
+			//gameObject.content = new BackGroundBase();
+			var bg = gt.GO(snrBackgroundB);
+			gameObject.addChild(bg);
+			player = gt.GO(snrPlayerControlB);
+			gameObject.addChild(player);
 		}
 		
 		public override function Start()
 		{
-			player = gt.GO(snrPlayerControlB);
-			gameObject.addChild(player);
-			trace("new");
+			
 		}
 		
 		public function Show()

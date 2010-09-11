@@ -31,7 +31,6 @@
 			//gameObject.addChild(player);
 			var zombie = gt.GO(snrZombieGrunt);
 			zombie.gob.playerTarget = player;
-			gameObject.addChild(zombie);
 		}
 		
 		public override function Start()

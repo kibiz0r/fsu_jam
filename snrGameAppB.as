@@ -34,6 +34,7 @@
 			AddBehavior(gtConsoleB);
 			//AddBehavior(gtFrameRateB);
 			//AddBehavior(gtMemoryB);
+			//AddBehavior(gtObjectsInfoB);
 			AddBehavior(gtScreenB);
 			mainCamera = AddBehavior(gtCameraB).SetCanvas("main");
 			

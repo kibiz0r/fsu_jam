@@ -25,6 +25,7 @@
 		public override function Awake()
 		{
 			psEasel.AddCanvas("background",psCanvas.CANVAS_SCALE);
+			psEasel.AddCanvas("gameSpace",psCanvas.CANVAS_SCALE);
 			psEasel.AddCanvas("main",psCanvas.CANVAS_SCALE);
 			psEasel.AddCanvas("ui",psCanvas.CANVAS_SCALE);
 			

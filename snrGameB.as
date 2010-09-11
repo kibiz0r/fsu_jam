@@ -26,9 +26,12 @@
 		{
 			//gameObject.content = new BackGroundBase();
 			var bg = gt.GO(snrBackgroundB);
-			gameObject.addChild(bg);
+			psEasel.GetCanvas("background").addChild(bg);
 			player = gt.GO(snrPlayerControlB);
 			gameObject.addChild(player);
+			var zombie = gt.GO(snrZombieGrunt);
+			zombie.gob.playerTarget = player;
+			gameObject.addChild(zombie);
 		}
 		
 		public override function Start()

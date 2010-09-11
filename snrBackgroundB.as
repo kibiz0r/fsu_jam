@@ -37,14 +37,15 @@
 		{
 			gameObject.content = m_dummyMovieClip;
 			
-			states.Add("Play", Play, "Default").Update();
+			//states.Add("Play", Play, "Default").Update();
 		}
 		
 		public override function Start()
 		{
-			states.Activate("Play");
+			//states.Activate("Play");
 		}
 		
+		/*
 		public function Play(setting:int)
 		{
 			if (setting == gtState.INIT)
@@ -53,6 +54,7 @@
 			}
 			else if (setting == gtState.UPDATE)
 			{
+				
 				gameObject.y += m_vy * gtTime.deltaT / 1000.0;
 				gameObject.x += m_vx * gtTime.deltaT / 1000.0;
 				if (gameObject.y >= psEasel.that.m_height || gameObject.y <= -psEasel.that.m_height)
@@ -67,6 +69,22 @@
 			else if (setting == gtState.EXIT)
 			{
 				
+			}
+		}
+		*/
+		
+		public function UpdateMovements(b_vx, b_vy)
+		{
+			gameObject.x += b_vx;// been time fixed by player update function
+			gameObject.y += b_vy;// been time fixed by player update function
+			
+			if (gameObject.y >= psEasel.that.m_height || gameObject.y <= -psEasel.that.m_height)
+			{
+				gameObject.y = 0;
+			}
+			if (gameObject.x >= psEasel.that.m_width || gameObject.x <= -psEasel.that.m_width)
+			{
+				gameObject.x = 0;
 			}
 		}
 	}

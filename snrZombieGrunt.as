@@ -128,6 +128,7 @@
 			}
 			else if(s == gtState.UPDATE)
 			{
+				/*
 				var p = playerTarget.localToGlobal(new Point(0, -25));
 				
 				var dx:Number = (p.x) - (gameObject.x);
@@ -162,7 +163,7 @@
 				
 				gameObject.x += m_vx;
 				gameObject.y += m_vy;
-				
+				*/
 				checkTarget();
 			}
 			else if(s == gtState.EXIT)
